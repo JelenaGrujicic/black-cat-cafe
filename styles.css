@@ -1,0 +1,172 @@
+:root {
+	--light: #fff9f4;
+	--dark: #2d2727;
+	}
+ 
+ .clearfix::after {
+	 content: "";
+	 clear: both;
+	 display: table;
+ }
+ 
+/*Medium devices (tablets, 768px and up)*/
+@media screen and (max-width: 768px) {
+	
+	li {
+		width: 100%;
+	}
+	
+	h1 {
+		font-size: 38px;
+	}
+	
+	.header p {
+	font-size: 28px;
+	}
+	
+	.logo {
+		width: 75px;
+		display: block;
+		margin: auto;
+	}
+    .authors {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		line-height: 1em;
+	}
+}
+	
+body {
+	width: 100%;
+	box-sizing: border-box;
+	background-image: url(./images/weathered-brick-wall-texture.jpg);
+	}
+	
+	
+.everything {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70vw;
+}
+
+h1, p {
+	font-family: 'PT Serif', serif;
+}
+
+h1 {
+	padding-top: 10px;
+	font-size: 48px;
+	}
+	
+p, li {
+	font-size: 20px;
+	}	
+
+h2 {
+	text-align: center; 
+	font-size: 36px;
+	padding-bottom: 20px;
+	padding-top: 30px;
+	color: var(--light);
+	font-family: 'Parisienne', cursive;
+	}
+	
+	ul {
+		padding-left: 0; 
+	}
+
+.address h2 {
+	color: var(--dark);
+}
+
+.header p {
+	font-size: 30px;
+	font-family: 'Parisienne', cursive;
+}
+
+nav {
+	width: 100%;
+	background-color: var(--dark);
+	color: var(--light);
+	float: right;
+	border-bottom: 5px var(--light) solid;
+	}
+
+
+li {
+	list-style: none;
+	padding: 10px;
+	border: 2px solid black;
+	float: right;
+	
+}
+
+a {
+	text-decoration: none;
+	padding: 10px;
+	color: var(--light);
+}
+
+nav a:hover {
+	color: var(--dark);
+	background-color: var(--light);
+}
+
+main {
+	min-width: 375px;
+	width: 50vw;
+	height: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	padding-bottom: 60px;
+	background-color: var(--dark);
+	color: var(--light);
+	clear: both;
+	}
+
+main h2 {
+	margin-bottom: 1em;
+}
+
+.item {
+display: grid;
+grid-template-columns: 1fr auto;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+.name, .price {
+	font-color: var(--light);
+}
+
+.header, footer {
+	background-color: var(--light);
+	color: var(--dark);
+	width: 70vw;
+	min-width: 375px;
+	text-align: center;
+}
+
+.address {
+	margin-top: 20px;
+}
+
+.authors {
+	display: flex;
+	justify-content: space-between;
+	max-width: 70vw;
+	margin-top: 10px;
+	color: var(--light);
+	}
+
+.authors a {
+	color: var(--light);
+}
+
+footer {
+	padding-bottom: 20px;
+}
+
+
